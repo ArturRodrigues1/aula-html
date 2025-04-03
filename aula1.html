@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,18 @@
 </head>
 <body>
     <h2>Criação de formulários</h2>
-    <form action="">
+    <form>
         Primeiro nome <input type="text" name="primeiro_nome"><br>
-        Último nome <input type="text" name="ultimo_nome">
+        Último nome <input type="text" name="ultimo_nome"><br>
+        E-mail <br>
+        <input type="email" name="email" placeholder="Seu email"><br>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="masc" value="masculino"><br>
+        <label for="femi">Feminino</label>
+        <input type="radio" name="genero" id="femi" value="feminino"><br>
+        Comentário: <br>
+        <textarea rows="7" cols="50" placeholder="Seu comentário"></textarea>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
