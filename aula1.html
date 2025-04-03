@@ -8,17 +8,43 @@
 <body>
     <h2>Criação de formulários</h2>
     <form>
-        Primeiro nome <input type="text" name="primeiro_nome"><br>
+        Primeiro nome<input type="text" name="primeiro_nome"><br>
         Último nome <input type="text" name="ultimo_nome"><br>
         E-mail <br>
         <input type="email" name="email" placeholder="Seu email"><br>
+
+        Senha: <br>
+        <input type="password" name="senha"> <br>
         <label for="masc">Masculino</label>
         <input type="radio" name="genero" id="masc" value="masculino"><br>
         <label for="femi">Feminino</label>
-        <input type="radio" name="genero" id="femi" value="feminino"><br>
-        Comentário: <br>
+        <input type="radio" name="genero" id="femi" value="feminino"><br> 
+      <br>  Ocupação: <br>
+        <select id="ocupacao" name="ocupacao">
+            <optgroup label="Técnico">
+                <option label="Desenvolvedor" value="desenvolvedor"></option>
+                <option label="Engenheiro(a) de Software" value="software"></option>
+     </optgroup>
+            <optgroup label="Não Técnico">
+            <option label="Consultor" value="consultor" selected></option>    
+            <option label="Gerente" value="gerente"></option>    
+     </optgroup> 
+             <option label="Outro" value="outro"></option>
+        </select><br><br>
+
+        Preferência: <br>
+        <input type="checkbox" id="pref1" name="prefs" value="newsletter">Envie-me um newsletter
+        <input type="checkbox" id="pref2" name="prefs" value="parceiros">Envie-me um newsletter
+        <input type="checkbox" id="pref3" name="prefs" value="marketing">Envie-me um newsletter
+
+      <br> <br>  Comentário: <br>
         <textarea rows="7" cols="50" placeholder="Seu comentário"></textarea>
+        <br> <br>
+        Escolha o arquivo a ser carregado no botão abaixo <br>
+        <input type="file" name="arquivo"> <br> <br>
+
         <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
